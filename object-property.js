@@ -3,12 +3,22 @@ const students = [
     {id: 7, name: 'Abdul Malek'},
     {id: 10, name: 'Shakil'},
     ]
+
+const output = [];
+for (let i = 0; i < students.length; i++) {
+    const element = students[i];
+    output.push(element.name)
+}
+console.log(output);
+
+
+// const res = [];
 // for (let i = 0; i < students.length; i++) {
-//     const element = students.name[i];
-//     result = element.students.name;
-//     output.push(result)
+//     const element = students[i];
+//     res.push(element.name)
 // }
-// const output = [];
+// console.log(res);
+
 
 const studentName = students.map( s => s.name );
 const bigger = students.filter(s => s.id > 6);
